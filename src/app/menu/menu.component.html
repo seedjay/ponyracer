@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light navbar-toggleable-md fixed-top bg-faded">
+  <button type="button" class="navbar-toggler navbar-toggler-right" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a routerLink="/" routerLinkActive="active" class="navbar-brand">PonyRacer</a>
+  <div id="navbar" [ngClass]="navbarCollapsed ? 'collapse navbar-collapse' : 'navbar-collapse'">
+    <div class="nav navbar-nav mr-auto">
+      <a routerLink="/races" routerLinkActive="active" class="nav-item nav-link">Races</a>
+    </div>
+  </div>
+</nav>
